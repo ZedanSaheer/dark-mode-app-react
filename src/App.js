@@ -10,7 +10,8 @@ function App() {
           </div>
       </div>
       <main>
-        Sample text
+        This is a sample container for testing 
+        <div>This should turn grey</div>
       </main>
     </div>
   );
