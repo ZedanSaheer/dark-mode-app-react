@@ -2,11 +2,14 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [toggle,setToggle] = useState(false)
+
   return (
     <div className="App">
       <div className="DarkmodeToggle">
           <div className="DarkmodeSwitch">
-
+              {toggle ? "on" : "off"}
           </div>
       </div>
       <main>
