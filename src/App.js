@@ -6,7 +6,7 @@ function App() {
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
-    setToggle(true);
+    setToggle(value=>!value);
   }
 
   return (

@@ -14,6 +14,21 @@ header{
     justify-content: center;
     align-items: center;
 }
+.DarkmodeToggle{
+    background: white;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.DarkmodeSwitch{
+    background: greenyellow;
+    padding: 5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
 main{
     flex:0.8;
     background: red;
