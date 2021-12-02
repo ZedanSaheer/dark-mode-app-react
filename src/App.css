@@ -16,11 +16,13 @@ header{
 }
 .DarkmodeToggle{
     background: white;
-    width: 80px;
-    height: 30px;
+    width: 75px;
+    height: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
     user-select: none;
+    border-radius: 30px;
 }
 .DarkmodeSwitch{
     background: greenyellow;
@@ -28,6 +30,7 @@ header{
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    border-radius: 30px;
 }
 main{
     flex:0.8;
@@ -40,4 +43,18 @@ main{
 
 main > p:first-child{
     margin-bottom: 10px;
+}
+p{
+    background-color: white;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+.active{
+    background: gray !important;
+    color: black;
+}
+
+.activeBg{
+    background: limegreen;
 }

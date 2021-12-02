@@ -11,16 +11,19 @@ function App() {
 
   return (
     <div className="App">
-      <header>
+      <header className={toggle && "activeBg"}>
         <div className="DarkmodeToggle" onClick={handleClick}>
-          <div className="DarkmodeSwitch">
-            {toggle ? "on" : "off"}
-          </div>
+      {  toggle ? ( <div className="DarkmodeSwitch">
+            Dark
+          </div>) :
+         ( <div className="DarkmodeSwitch">
+            light
+          </div>)}
         </div>
       </header>
       <main>
         <p>This is a sample container for testing</p>
-        <p>This should turn grey</p>
+        <p className={toggle && "active"}>This should turn grey</p>
       </main>
     </div>
   );
