@@ -16,12 +16,12 @@ function App() {
       {  toggle ? ( <div className="DarkmodeSwitch">
             Dark
           </div>) :
-         ( <div className="DarkmodeSwitch">
+         ( <div className="DarkmodeSwitchRed">
             light
           </div>)}
         </div>
       </header>
-      <main>
+      <main className={toggle && "activeMain"}>
         <p>This is a sample container for testing</p>
         <p className={toggle && "active"}>This should turn grey</p>
       </main>
